@@ -156,10 +156,9 @@
 	 <div class="section" id="section4">
         <div class="intro bgper">
             <h1>Empresas</h1>
-            <p>
-                Designed to fit different screen sizes as well as tablet and mobile devices.
-                <br /><br /><br /><br /><br /><br />
-            </p>
+                <img src="imgs/emp.png" style="text-align: center;" width="798" height="316">
+				<br><br><br><p style="color:black; text-align: center; font-size:100%;"> Para mais informações, favor checar meu currículo</p>
+                <br /><br /><br />
         </div>
     </div>
 	 <div class="section" id="section5">
@@ -243,6 +242,12 @@
         <li><a href="https://alvarotrigo.com/#contact-page">Contact</a></li>
     </ul>
 </div>
+<div id="fp-nav" class="right" style="margin-top: -33.5px;">
+	<ul>
+		<li><a href="#firstPage" class="active"><span></span></a>
+			<div class="fp-tooltip right">First</div>
+		</li>
+		<li><a href="#secondPage" class=""><span></span></a><div class="fp-tooltip right">Second</div></li><li><a href="#3rdPage" class=""><span></span></a><div class="fp-tooltip right">Third</div></li></ul></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.min.js"></script>
@@ -254,7 +259,10 @@
             menu: '#menu',
             css3: true,
             scrollingSpeed: 1000,
-			scrollOverflow: true
+			scrollOverflow: true,
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: ['First page', 'Second page', 'Third and last page']
         });
 
         $('#showExamples').click(function(e){
