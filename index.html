@@ -31,16 +31,24 @@
 		{
 			font-size: 20%;
 		}
+		h2
+		{
+			text-align: left; 
+			color: black;
+			padding-left: 20px
+		}
+		.center
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(255, 255, 255, 0.6); 
+			width: 85%;
+		}
 		.section
 		{
 			background-size: cover;
-		}
-		.bgper
-		{
-			background-color: rgba(255, 255, 255, 0.6); 
-			margin-bottom:10%;
-			margin-left:10%; 
-			margin-right:10%;
 		}
 		#section0
 		{
@@ -62,6 +70,15 @@
 		{
 			max-width: 100%;
 			height: auto;
+		}
+			
+		@media screen and (max-height:760px)
+		{
+			h2
+			{
+				text-align: center; 
+				padding-left: 0px
+			}
 		}
 	
 	</style>
@@ -92,8 +109,8 @@
 <div id="fullpage">
 
     <div class="section active" id="section0">
-        <div class="bgper">
-		<h1>Matt C</h1>
+        <div class="center">
+		<img src="imgs/logo.png" >
         <h2>Site em Construção</h2>
 		</div>
 	</div>
@@ -124,17 +141,14 @@
 		</div>
     </div>
     <div class="section" id="section2">
-        <div class="intro bgper">
-            <h1>Educação</h1>
-				<img src="imgs/ufpa.png" height="25%" width ="25%" style="float:left">
-				<img src="imgs/uno.png" height="25%" width ="25%" style="float:center">
-				<img src="imgs/fcc.png" height="25%" width ="25%" style="float:right; margin-right: 5%">
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="intro center">
+            <h2>Educação</h2>
+				<img src="imgs/edu.png">
         </div>
     </div>
     <div class="section" id="section3">
         <div class="intro">
-            <h1>Expertise</h1>
+            <h2>Expertise</h2>
             <p>
                 Designed to fit different screen sizes as well as tablet and mobile devices.
                 <br /><br /><br /><br /><br /><br />
@@ -142,16 +156,16 @@
         </div>
     </div>
 	 <div class="section" id="section4">
-        <div class="intro bgper">
-            <h1>Empresas</h1>
-                <img src="imgs/emp.png" style="text-align: center;">
+        <div class="intro center">
+            <h2>Empresas</h2>
+                <img src="imgs/emp.png" style="text-align: center; margin-left: 10%, margin-right: 10%">
 				<br><br><br><p style="color:black; text-align: center; font-size:100%;"> Para mais informações, favor checar <a href="https://drive.google.com/file/d/0B6tlWp-Kr6TQVmNMZ2RDeXVubkE/view?usp=sharing" target="_blank">meu currículo</a></p>
                 <br /><br /><br />
         </div>
     </div>
 	 <div class="section" id="section5">
         <div class="intro">
-            <h1>Projetos</h1>
+            <h2>Projetos</h2>
             <p>
                 Designed to fit different screen sizes as well as tablet and mobile devices.
                 <br /><br /><br /><br /><br /><br />
@@ -159,8 +173,8 @@
         </div>
     </div>
 	 <div class="section" id="section6">
-        <div class="intro bgper">
-            <h1>Contato</h1>
+        <div class="intro center">
+            <h2>Contato</h2>
             <p>
                 Designed to fit different screen sizes as well as tablet and mobile devices.
                 <br /><br /><br /><br /><br /><br />
@@ -230,13 +244,6 @@
         <li><a href="https://alvarotrigo.com/#contact-page">Contact</a></li>
     </ul>
 </div>
-<div id="fp-nav" class="right" style="margin-top: -33.5px;">
-	<ul>
-		<li><a href="#firstPage" class="active"><span></span></a>
-			<div class="fp-tooltip right">First</div>
-		</li>
-		<li><a href="#secondPage" class=""><span></span></a><div class="fp-tooltip right">Second</div></li><li><a href="#3rdPage" class=""><span></span></a><div class="fp-tooltip right">Third</div></li></ul></div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.min.js"></script>
 <script type="text/javascript">
@@ -250,7 +257,7 @@
 			scrollOverflow: true,
 			navigation: true,
 			navigationPosition: 'right',
-			navigationTooltips: ['First page', 'Second page', 'Third and last page']
+			navigationTooltips: ['Alala', 'Second page', 'Third and last page']
         });
 
         $('#showExamples').click(function(e){
