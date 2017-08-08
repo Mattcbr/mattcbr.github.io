@@ -33,13 +33,23 @@
     
 		p
 		{
-			font-size: 20%;
+			font-size: 100%;
+			color: black;
+			font-family: 'Josefin Sans', sans-serif;
 		}
 		h2
 		{
 			text-align: left; 
 			color: black;
-			padding-left: 20px
+			padding-left: 20px;
+			font-weight: bold;
+			font-family: 'Playfair Display', serif;
+		}
+		a
+		{
+			color:black;
+			font-weight: bold;
+			text-decoration: underline;
 		}
 		.center
 		{
@@ -53,6 +63,11 @@
 		.section
 		{
 			background-size: cover;
+		}
+		#txtcont
+		{
+			text-align: justify;
+			padding-left:50px;
 		}
 		#section0
 		{
@@ -82,6 +97,11 @@
 			{
 				text-align: center; 
 				padding-left: 0px
+			}
+			#txtcont
+			{
+				text-align: center;
+				padding-left:0px;
 			}
 		}
 	
@@ -120,7 +140,7 @@
 	</div>
     <div class="section" id="section1">
 		<div class="intro" style="color: black; text-align: center; font-size:100%;">
-			<h2 style="text-align: left; color: black;">Sobre Mim</h2>
+			<h2>Sobre Mim</h2>
 			<img src="imgs/Matheus.jpg" width="525" height="394" />
 			<h3><strong>Nome</strong></h3>
 			<p style="font-size:100%">Matheus Castelo Branco Queiroz</p>
@@ -147,19 +167,25 @@
     <div class="section" id="section2">
         <div class="intro center">
             <h2>Educação</h2>
-				<img src="imgs/edu.png" style="max-width: 50%; height: auto;">
+				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto"><!--style="max-width: 50%; height: auto;">-->
         </div>
     </div>
     <div class="section" id="section3">
         <div class="container">
             <h2>Expertise</h2>
-			<!--RESOLVER CAGADA DAS IMAGENS COM BOOTSTRAP-->
+			<!--RESOLVER CAGADA DAS IMAGENS COM BOOTSTRAP
+			************Espaço para anotações************
+			
+			Pra dar o efeito que eu quero, tem que ser col-md-6
+			
+			************Fim do espaço para anotações*************
+			-->
 				<div class="row">
-					<div class="col-xs-6">
+					<div class="col-md-6">
 						<b><p style="color:black; text-align: center; font-size:100%; padding-top: 5px;">Linguagens de Programação</p></b>
 						<p><img src="imgs/Languages.png"></p>
 					</div>
-					<div class="col-xs-6">
+					<div class="col-md-6">
 						<b><p style="color:black; text-align: center; font-size:100%; padding-top: 5px; ">Ferramentas</p></b>
 						<p><img src="imgs/tools.png"></p>
 					</div>
@@ -218,12 +244,35 @@
         </div>
     </div>
 	 <div class="section" id="section6">
-        <div class="intro center">
+        <div class="container center">
             <h2>Contato</h2>
-            <p>
-                Designed to fit different screen sizes as well as tablet and mobile devices.
-                <br /><br /><br /><br /><br /><br />
-            </p>
+			<div class="row">
+			<p style="font-size:100%; padding-top: 5px;" id="txtcont">Você pode entrar em contato via:</p>
+				<div class="col-xs-4">
+					<a href="mailto:matheus.castelo@gmail.com" target="_blank">
+						<img src="imgs/mail.png" style="max-height:200px; min-height:15px;">
+						<div class="caption">
+							<p style="text-align:center;font-size:16px"><b>Email</b></p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="https://www.linkedin.com/in/matheuscastelo/" target="_blank">
+						<img src="imgs/linkedin.png" style="max-height:200px; min-height:15px;">
+						<div class="caption">
+							<p style="text-align:center;font-size:16px"><b>LinkedIn</b></p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-4">
+					<a href="https://drive.google.com/file/d/0B6tlWp-Kr6TQVmNMZ2RDeXVubkE/view?usp=sharing" target="_blank">
+						<img src="imgs/resume.png" style="max-height:200px; min-height:15px;">
+						<div class="caption">
+							<p style="text-align:center;font-size:16px"><b>Ou verificar meu currículo</b></p>
+						</div>
+					</a>
+				</div>
+			</div>
         </div>
     </div>
 </div>
@@ -233,10 +282,10 @@
         <li><a href="https://alvarotrigo.com/fullPage/utils/wordpress.html">Wordpress theme</a></li>
         <li><a href="https://github.com/alvarotrigo/fullPage.js/archive/master.zip">Download</a></li>
         <li>
-            <a href="#" id="showExamples">Examples</a>
+            <a href="#" id="showExamples">Languages</a>
             <div id="examplesList">
                 <div class="column">
-                    <h3>Navigation</h3>
+                    <h3>Languages</h3>
                     <ul>
                     <li><a href="examples/scrollBar.html">Scroll Bar Enabled</a></li>
                     <li><a href="examples/normalScroll.html">Normal scrolling</a></li>
