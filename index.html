@@ -89,6 +89,7 @@
 		{
 			max-width: 100%;
 			height: auto;
+			position: static;
 		}
 			
 		@media screen and (max-height:760px)
@@ -132,13 +133,13 @@
 
 <div id="fullpage">
 
-    <div class="section active" id="section0">
+    <div class="section active container-fluid" id="section0">
         <div class="center">
 		<img src="imgs/Logo.png" >
         <h2>Site em Construção</h2>
 		</div>
 	</div>
-    <div class="section" id="section1">
+    <div class="section container-fluid" id="section1">
 		<div class="intro" style="color: black; text-align: center; font-size:100%;">
 			<h2>Sobre Mim</h2>
 			<img src="imgs/Matheus.jpg" width="525" height="394" />
@@ -164,14 +165,14 @@
 
 		</div>
     </div>
-    <div class="section" id="section2">
+    <div class="section container-fluid" id="section2">
         <div class="intro center">
             <h2>Educação</h2>
-				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto"><!--style="max-width: 50%; height: auto;">-->
+				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto; position: static;">
         </div>
     </div>
     <div class="section" id="section3">
-        <div class="container">
+        <div class="container-fluid">
             <h2>Expertise</h2>
 			<!--RESOLVER CAGADA DAS IMAGENS COM BOOTSTRAP
 			************Espaço para anotações************
@@ -182,17 +183,17 @@
 			-->
 				<div class="row">
 					<div class="col-md-6">
-						<b><p style="color:black; text-align: center; font-size:100%; padding-top: 5px;">Linguagens de Programação</p></b>
-						<p><img src="imgs/Languages.png"></p>
+						<b><p style="text-align: center;font-size: 150%; padding-top: 5px;">Linguagens de Programação</p></b>
+						<img src="imgs/Languages.png" class="img-responsive" style="margin: 0 auto; position: static;">
 					</div>
 					<div class="col-md-6">
-						<b><p style="color:black; text-align: center; font-size:100%; padding-top: 5px; ">Ferramentas</p></b>
-						<p><img src="imgs/tools.png"></p>
+						<b><p style="text-align: center; font-size: 150%; padding-top: 5px; ">Ferramentas</p></b>
+						<img src="imgs/tools.png" class="img-responsive" style="margin: 0 auto; position: static;">
 					</div>
 				</div>
         </div>
     </div>
-	 <div class="section" id="section4">
+	 <div class="section container-fluid" id="section4">
         <div class="intro center">
             <h2>Empresas</h2>
                 <img src="imgs/emp.png" class="img-responsive" style="margin: 0 auto"><!--style="text-align: center; margin-left: 10%, margin-right: 10%; max-width: 60%; height: auto;">-->
@@ -200,7 +201,7 @@
         </div>
     </div>
 	 <div class="section" id="section5">
-        <div class="container">
+        <div class="container-fluid">
             <h2>Projetos</h2>
 				<div class="row">
 					<div class="col-md-4">
@@ -244,7 +245,7 @@
         </div>
     </div>
 	 <div class="section" id="section6">
-        <div class="container center">
+        <div class="container-fluid center">
             <h2>Contato</h2>
 			<div class="row">
 			<p style="font-size:100%; padding-top: 5px;" id="txtcont">Você pode entrar em contato via:</p>
@@ -365,6 +366,6 @@
         });
     });
 </script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<!--<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>-->
 </body>
 </html>
