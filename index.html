@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Matt C</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
+	<!--<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />-->
 	<meta name="Resource-type" content="Document" />
 
 
@@ -119,8 +119,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
-
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
 
 	<script type="text/javascript">
@@ -341,6 +339,25 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            menu: '#menu',
+            css3: true,
+            scrollingSpeed: 1000,
+        });
+
+        $('#showExamples').click(function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            $('#examplesList').toggle();
+        });
+
+        $('html').click(function(){
+            $('#examplesList').hide();
+        });
+    });
+</script>
 
 </body>
 </html>
