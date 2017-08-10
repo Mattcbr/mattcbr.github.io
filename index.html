@@ -339,10 +339,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.min.js"></script>
-<!--<script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            menu: '#menu',
+            sectionsColor: ['#1bbc9b', 'rgb(109, 99, 117)', '#7BAABE', 'whitesmoke', '#ccddff'],
+			anchors: ['home', 'abme', 'edu', 'exp', 'emp', 'proj', 'cont'],
+			scrollOverflow: true,
+			navigation: true,
+			navigationPosition: 'left',
+			navigationTooltips: ['Home', 'About Me', 'Education', 'Expertise', 'Companies', 'Projects', 'Contact'],
+			menu: '#menu',
             css3: true,
             scrollingSpeed: 1000,
         });
@@ -357,7 +363,7 @@
             $('#examplesList').hide();
         });
     });
-</script>-->
+</script>
 
 </body>
 </html>
