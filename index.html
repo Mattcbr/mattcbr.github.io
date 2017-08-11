@@ -53,10 +53,6 @@
 			font-weight: bold;
 			text-decoration: underline;
 		}
-		.needsresize img
-		{
-				max-width: 100%;
-		}
 		.center
 		{
 			position: absolute;
@@ -120,16 +116,7 @@
 				text-align: center;
 				padding-left:0px;
 			}
-			
 		}
-		@media screen and (max-height:630px)
-		{
-			.needsresize img
-			{
-				max-width: 50%;
-			}
-		}
-	
 	</style>
 
 	<!--[if IE]>
@@ -204,9 +191,9 @@
 <div id="fullpage">
 	<!--Homepage-->
 	<div class="section active container-fluid" id="section0">
-        <div class="center needsresize">
+        <div class="center">
 		<img src="imgs/Logo.png" >
-        <h2>Site em Construção: T.A.I. 8</h2>
+        <h2>Site em Construção</h2>
 		</div>
 	</div>
 	
@@ -245,9 +232,9 @@
 	
 	<!--Education-->
 	<div class="section container-fluid" id="section2">
-        <div class="intro center needsresize">
+        <div class="intro center">
             <h2>Educação</h2>
-				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto; position: static;">
+				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto; position: static; max-width: 60%">
         </div>
     </div>
 	
