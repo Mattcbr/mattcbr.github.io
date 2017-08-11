@@ -26,6 +26,7 @@
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 	<style>
 
 		p
@@ -74,6 +75,12 @@
 		{
 			background-image: url(imgs/bg1.jpg);
 		}
+		#section1
+		{
+			color: black; 
+			text-align: justify; 
+			font-size:120%;
+		}
 		#section2
 		{
 			background-image: url(imgs/bged.jpg);
@@ -95,6 +102,10 @@
 			
 		@media screen and (max-height:760px)
 		{
+			#section1
+			{
+				text-align: center; 
+			}
 			h2
 			{
 				text-align: center; 
@@ -188,31 +199,34 @@
 	</div>
 	
 	<!--About Me-->
-	<div class="section " id="section1">
-			<div class="intro" style="color: black; text-align: center; font-size:100%;">
-			<h2>Sobre Mim</h2>
-			<img src="imgs/Matheus.jpg" width="525" height="394" />
-			<h3><strong>Nome</strong></h3>
-			<p style="font-size:100%">Matheus Castelo Branco Queiroz</p>
-			
-			<br><h3><strong>Idiomas</strong></h3>
-			<p style="font-size:100%">Português (Nativo)<br>
-			Inglês Fluente:</p>
+	<div class="section container-fluid" id="section1">
+		<h2>Sobre Mim</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="imgs/Matheus.jpg" width="525" height="394" />
+				</div>
+				<div class="col-md-8">
+					<h3><strong>Nome</strong></h3>
+					<p style="font-size:100%">Matheus Castelo Branco Queiroz</p>
+					
+					<br><h3><strong>Idiomas</strong></h3>
+					<p style="font-size:100%">Português (Nativo)<br>
+					Inglês Fluente:</p>
 
-			<br><p style="font-size:100%">Vivência no Exterior<br>
-			Omaha, NE (EUA), 12 Meses<br>
-			Programa Ciência sem Fronteiras</p>
+					<br><p style="font-size:100%">Vivência no Exterior<br>
+					Omaha, NE (EUA), 12 Meses<br>
+					Programa Ciência sem Fronteiras</p>
 
-			<br><p style="font-size:100%">TOEFL - ITP<br>
-			Pontuação: 643 (95%)<br>
-			Data de aplicação: 16/09/2016</p>
+					<br><p style="font-size:100%">TOEFL - ITP<br>
+					Pontuação: 643 (95%)<br>
+					Data de aplicação: 16/09/2016</p>
 
-			<br><p style="font-size:100%">Curso de Professor<br>
-			Fisk, 2013</p>
-			<br><h3><strong>Sobre mim</strong></h3>
-			<p style="text-align: justify;font-size:100%">Graduando em Engenharia da Computação, tenho grande interesse na área de automação, especialmente Domótica (Automação residencial). Também aprecio bastante a área de programação, tendo experiência com diversas linguagens de programação. Possuo experiência Internacional, pois estagiei na <a href="http://www.macpractice.com">MacPractice</a> (EUA), empresa focada no desenvolvimento de soluções para a área médica utilizando os sistemas da Apple (iOs e MacOs).</p><br>
-
-		</div>
+					<br><p style="font-size:100%">Curso de Professor<br>
+					Fisk, 2013</p>
+					<br><h3><strong>Sobre mim</strong></h3>
+					<p style="text-align: justify;">Graduando em Engenharia da Computação, tenho grande interesse na área de automação, especialmente Domótica (Automação residencial). Também aprecio bastante a área de programação, tendo experiência com diversas linguagens de programação. Possuo experiência Internacional, pois estagiei na <a href="http://www.macpractice.com">MacPractice</a> (EUA), empresa focada no desenvolvimento de soluções para a área médica utilizando os sistemas da Apple (iOs e MacOs).</p><br>
+				</div>
+			</div>
 	</div>
 	
 	<!--Education-->
@@ -247,7 +261,7 @@
         </div>
     </div>
 	
-	<!--Empresas-->
+	<!--Companies-->
 	 <div class="section container-fluid" id="section4">
         <div class="intro center">
             <h2>Empresas</h2>
@@ -256,7 +270,7 @@
         </div>
     </div>
 	
-	<!--Projetos-->
+	<!--Projects-->
 	<div class="section" id="section5"style="background-color:#1bbc9b">
         <div class="container-fluid">
             <h2>Projetos</h2>
@@ -302,7 +316,7 @@
         </div>
     </div>
 	
-	<!--Contato-->
+	<!--Contact-->
 	<div class="section" id="section6">
         <div class="container-fluid center">
             <h2>Contato</h2>
@@ -342,7 +356,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', 'rgb(109, 99, 117)', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#1bbc9b', '#cc6600', '#7BAABE', 'whitesmoke', '#ccddff'],
 			anchors: ['home', 'abme', 'edu', 'exp', 'emp', 'proj', 'cont'],
 			scrollOverflow: true,
 			navigation: true,
