@@ -55,12 +55,10 @@
 		}
 		.center
 		{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			position: static;
 			background-color: rgba(255, 255, 255, 0.6); 
-			width: 75%;
+			margin-right:10%;
+			margin-left:10%;
 		}
 		.section
 		{
@@ -234,7 +232,16 @@
 	<div class="section container-fluid" id="section2">
         <div class="intro center">
             <h2>Educação</h2>
-				<img src="imgs/edu.png" class="img-responsive" style="margin: 0 auto; position: static; max-width: 60%">
+				<div class="col-md-4">
+					<img src="imgs/UFPA-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
+				</div>
+				<div class="col-md-4">
+					<img src="imgs/UNO-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
+				</div>
+				<div class="col-md-4">
+					<img src="imgs/FCC-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
+				</div>
+			<p>.</p>
         </div>
     </div>
 	
