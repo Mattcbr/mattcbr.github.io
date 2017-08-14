@@ -115,6 +115,25 @@
 				padding-left:0px;
 			}
 		}
+		#navmob
+		{
+			display:none;
+		}
+		#navpc
+		{
+			display:yes;
+		}
+		@media screen and (max-height:630px)
+		{
+			#navpc
+			{
+				display:none;
+			}
+			#navmob
+			{
+				display:yes;
+			}
+		}
 	</style>
 
 	<!--[if IE]>
@@ -190,8 +209,13 @@
 	<!--Homepage-->
 	<div class="section active container-fluid" id="section0">
         <div class="center">
-		<img src="imgs/Logo.png" >
-        <h2>Site em Construção</h2>
+			<img src="imgs/Logo.png" >
+			<div id="navpc">
+				<h2>Nav Pc</h2>
+			</div>
+			<div id="navmob">
+				<h2>Nav Mob</h2>
+			</div>
 		</div>
 	</div>
 	
