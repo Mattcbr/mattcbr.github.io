@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta charset="utf-8">
@@ -12,7 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
 	
 	<!--Meu Código-->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<meta name="theme-color" content="#e6ffb3"/>
 	<!--Bootstrap-->
@@ -20,24 +19,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<style>
-
 		p
 		{
 			font-size: 100%;
 			color: black;
 			font-family: 'Josefin Sans', sans-serif;
 		}
-		h2
-		{
-			text-align: left; 
-			color: black;
-			padding-left: 20px;
-			font-weight: bold;
-			font-family: 'Playfair Display', serif;
-		}
 		h3
 		{
-			color: black;
 			font-family: 'Josefin Sans', sans-serif;
 		}
 		a
@@ -57,74 +46,9 @@
 		{
 			background-size: cover;
 		}
-		#txtcont
-		{
-			text-align: justify;
-			padding-left:50px;
-		}
 		#section0
 		{
 			background-image: url(imgs/bg1.jpg);
-		}
-		#section1
-		{
-			color: black; 
-			text-align: justify; 
-			font-size:120%;
-		}
-		#section2
-		{
-			background-image: url(imgs/bged.jpg);
-		}
-		#section4
-		{
-			background-image: url(imgs/bgemp.jpg);
-		}
-		#section6
-		{
-			background-image: url(imgs/bgcont.jpg);
-		}
-		img 
-		{
-			max-width: 100%;
-			height: auto;
-			position: static;
-		}
-		#navmob
-		{
-			display:none;
-		}
-		#navpc
-		{
-			display:block;
-		}
-		@media screen and (max-height:760px)
-		{
-			#section1
-			{
-				text-align: center; 
-			}
-			h2
-			{
-				text-align: center; 
-				padding-left: 0px
-			}
-			#txtcont
-			{
-				text-align: center;
-				padding-left:0px;
-			}
-		}
-		@media screen and (max-height:630px)
-		{
-			#navpc
-			{
-				display:none;
-			}
-			#navmob
-			{
-				display:block;
-			}
 		}
 	</style>
 
@@ -136,8 +60,6 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
 </head>
 <body>
@@ -147,197 +69,33 @@
 	<div class="section active container-fluid" id="section0">
         <div class="center">
 			<img src="imgs/Logo.png" >
-			<div id="navpc">
-				<h3>Para navegar, utilize os pontos na lateral esquerda, as setas do teclado ou o scroll do mouse</h3>
-			</div>
-			<div id="navmob">
-				<h3>Para navegar, utilize os pontos na lateral esquerda ou deslize para baixo</h3>
-			</div>
+			<h3 style="margin-top: 0px;">Por Favor, selecione um idioma:<br>Please, select a language:</h3>
+				<div class="col-xs-6">
+					<a href="pt-br.html">
+						<img src="imgs/brazil_flag.png" style="max-height:200px; min-height:15px;">
+						<div class="caption">
+							<p style="text-align:center;font-size:16px"><b>pt-br</b></p>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-6">
+					<a href="en-us.html">
+						<img src="imgs/us_flag.png" style="max-height:200px; min-height:15px;">
+						<div class="caption">
+							<p style="text-align:center;font-size:16px"><b>en-us</b></p>
+						</div>
+					</a>
+				</div>
+				<p style="font-size:1px"> . </p>
 		</div>
 	</div>
-	
-	<!--About Me-->
-	<div class="section" id="section1">
-		<div class="container-fluid">
-			<h2>Sobre Mim</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<img src="imgs/Matheus-round.png" class="img-responsive" style="margin: 0 auto;" />
-				</div>
-				<div class="col-md-8">
-					<h3><strong>Nome</strong></h3>
-					<p>Matheus Castelo Branco Queiroz</p>
-					
-					<br><h3><strong>Idiomas</strong></h3>
-					<p>Português (Nativo)<br>
-					Inglês Fluente:</p>
-
-					<br><p>Vivência no Exterior<br>
-					Omaha, NE (EUA), 12 Meses<br>
-					Programa Ciência sem Fronteiras</p>
-
-					<br><p>TOEFL - ITP<br>
-					Pontuação: 643 (95%)<br>
-					Data de aplicação: 16/09/2016</p>
-
-					<br><p>Curso de Professor<br>
-					Centro de Ensino Fisk, 2013</p>
-					<br><h3><strong>Sobre mim</strong></h3>
-					<p style="text-align: justify;">Graduando em Engenharia da Computação, tenho grande interesse na área de automação, especialmente Domótica (Automação residencial). Também aprecio bastante a área de programação, tendo experiência com diversas linguagens de programação. Possuo experiência Internacional, pois estagiei na <a href="http://www.macpractice.com"target="_blank">MacPractice</a> (EUA), empresa focada no desenvolvimento de soluções para a área médica utilizando os sistemas da Apple (iOs e MacOs).</p><br>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<!--Education-->
-	<div class="section container-fluid" id="section2">
-        <div class="intro center" style="margin-bottom:5%;">
-            <h2>Educação</h2>
-				<div class="col-md-4">
-					<img src="imgs/UFPA-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
-				</div>
-				<div class="col-md-4">
-					<img src="imgs/UNO-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
-				</div>
-				<div class="col-md-4">
-					<img src="imgs/FCC-BR.png" class="img-responsive" style="margin: 0 auto; position: static;">
-				</div>
-			<p style="font-size:1px">.</p>
-        </div>
-    </div>
-	
-	<!--Expertise-->
-	<div class="section" id="section3">
-        <div class="container-fluid">
-            <h2>Expertise</h2>
-				<div class="row">
-					<div class="col-md-6">
-						<b><p style="text-align: center;font-size: 150%; padding-top: 5px;">Linguagens de Programação</p></b>
-						<img src="imgs/Languages.png" class="img-responsive" style="margin: 0 auto; position: static;">
-					</div>
-					<div class="col-md-6">
-						<b><p style="text-align: center; font-size: 150%; padding-top: 5px; ">Ferramentas</p></b>
-						<img src="imgs/tools.png" class="img-responsive" style="margin: 0 auto; position: static;">
-					</div>
-				</div>
-        </div>
-    </div>
-	
-	<!--Companies-->
-	 <div class="section container-fluid" id="section4">
-        <div class="intro center">
-            <h2>Empresas</h2>
-                <img src="imgs/emp.png" class="img-responsive" style="margin: 0 auto">
-				<p style="color:black; text-align: center; font-size:130%; padding-top: 5px; padding-bottom: 10px"> Para mais informações, favor checar <a href="https://drive.google.com/file/d/0B6tlWp-Kr6TQVmNMZ2RDeXVubkE/view?usp=sharing" target="_blank">meu currículo</a></p>
-        </div>
-    </div>
-	
-	<!--Projects-->
-	<div class="section" id="section5"style="background-color:#1bbc9b">
-        <div class="container-fluid">
-            <h2>Projetos</h2>
-				<div class="row">
-					<div class="col-md-4">
-						<a href="https://www.procamera.com.br" target="_blank">
-							<img src="imgs/pcsite.png" style="width:100%">
-						</a>
-						<div class="caption">
-							<p style="text-align:center;font-size:16px"><b>Pró Câmera</b><br>
-								Site para assistência técnica utilizando WordPress<br>
-								Desenvolvido sozinho<br>
-								<a href="https://www.procamera.com.br" target="_blank">
-									www.procamera.com.br<br>	
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<a href="http://www.pctguama.org.br" target="_blank">
-							<img src="imgs/pct.png" style="width:100%">
-						</a>
-						<div class="caption">
-							<p style="text-align:center;font-size:16px"><b>PCT Guamá</b><br>
-								Site para parque tecnológico utilizando WordPress<br>
-								Desenvolvido em time<br>
-								<a href="http://www.pctguama.org.br" target="_blank">
-									www.pctguama.org.br<br>
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="imgs/pai.jpg" style="width:100%">
-						<div class="caption">
-						  <p style="text-align:center; font-size:16px"><b>Pai D'égua</b><br>
-							Robô Sumô Autômato criado para competições<br>
-							Primeiro lugar no campeonato de robôs de Projetos de Engenharia III – Dezembro 2014<br>
-							Terceiro lugar no campeonato de robôs da SITEC 2014 – Novembro 2014<br></p>
-						</div>
-					</div>
-				</div>
-        </div>
-    </div>
-	
-	<!--Contact-->
-	<div class="section" id="section6">
-        <div class="container-fluid center">
-            <h2>Contato</h2>
-			<div class="row">
-			<p style="font-size:150%; padding-top: 5px;" id="txtcont">Vamos conversar? Entre em contato comigo:</p>
-				<div class="col-xs-4">
-					<a href="mailto:matheus.castelo@gmail.com" target="_blank">
-						<img src="imgs/mail.png" style="max-height:200px; min-height:15px;">
-						<div class="caption">
-							<p style="text-align:center;font-size:16px"><b>Email</b></p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xs-4">
-					<a href="https://www.linkedin.com/in/matheuscastelo/" target="_blank">
-						<img src="imgs/linkedin.png" style="max-height:200px; min-height:15px;">
-						<div class="caption">
-							<p style="text-align:center;font-size:16px"><b>LinkedIn</b></p>
-						</div>
-					</a>
-				</div>
-				<div class="col-xs-4">
-					<a href="https://drive.google.com/file/d/0B6tlWp-Kr6TQVmNMZ2RDeXVubkE/view?usp=sharing" target="_blank">
-						<img src="imgs/resume.png" style="max-height:200px; min-height:15px;">
-						<div class="caption">
-							<p style="text-align:center;font-size:16px"><b>Currículo</b></p>
-						</div>
-					</a>
-				</div>
-			</div>
-        </div>
-    </div>
-</div>
-<div id="infoMenu">
-    <ul>
-        <li>
-            <a href="#" id="showExamples">Idiomas</a>
-            <div id="examplesList">
-                <div class="column">
-                    <h3>Idiomas</h3>
-                    <ul>
-                    <li><a href="" hreflang="pt-br">Português</a></li>
-                    <li><a href="" hreflang="en">Inglês</a></li>
-                    </ul>
-                </div>           
-            </div>
-        </li>
-    </ul>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#1bbc9b', '#cc6600', '#7BAABE', 'whitesmoke', '#ccddff'],
-			scrollOverflow: true,
-			navigation: true,
-			navigationPosition: 'left',
-			navigationTooltips: ['Home', 'Sobre Mim', 'Educação', 'Expertise', 'Empresas', 'Projetos', 'Contato'],
+            sectionsColor: ['#1bbc9b'],
 			menu: '#menu',
             css3: true,
             scrollingSpeed: 1000,
